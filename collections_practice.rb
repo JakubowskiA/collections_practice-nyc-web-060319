@@ -1,3 +1,4 @@
+require "pry"
 def sort_array_asc(array)
 array.sort{|a,b| a<=>b}
 end
@@ -33,4 +34,12 @@ end
 
 def sum_array(array)
   array.inject(:+)
+end
+
+def add_s(array)
+  array.each_with_index.collect do |element, index|
+    binding.pry
+    if element != array[1]
+
+  end
 end
